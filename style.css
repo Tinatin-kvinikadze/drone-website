@@ -1,7 +1,9 @@
 :root{
     --pink:#2a76ec;
 }
-
+body{
+  background-color: rgb(201, 223, 231);
+}
 
 
 *{
@@ -14,9 +16,9 @@
     text-decoration: none;
     text-transform:capitalize;
     transition: .2s linear;
+   
 
 }
-
 
 html {
     font-size:62.5%;
@@ -40,6 +42,12 @@ section {
     
 
 
+}
+
+.pic{
+  width:100%;
+  padding-top: 30%;
+ display:none;
 }
 
 
@@ -216,13 +224,13 @@ header .navbar a{
 }
 
 .home .content h3{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .home .content span{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .icons-container .icons h3{
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 .icons-container .icons span{
@@ -514,3 +522,28 @@ header .navbar a{
   .footer{
     padding: 2rem 9%;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      
+    }
+    .main-video{
+      display:none;
+    }
+
+    .pic{
+      display: block;
+    }
+    .home .content h3{
+      font-size: 18px;
+      position:absolute;
+      top:-242px;
+    }
+    .btn{
+      position: absolute;
+      top:-143px;
+    }
+  }
+  
